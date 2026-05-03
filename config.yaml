@@ -1,0 +1,53 @@
+#baseURL: https://kellypetersonfortexas.com/
+languageCode: en-us
+title: Kelly Peterson for State Representative District 126
+taxonomies:
+  category: categories
+  section_category: section_categories
+enableRobotsTXT: true
+params:
+  twitter_user: kellypetersontx
+  twitter_link: https://x.com/kellypetersontx
+  facebook_link: https://www.facebook.com/kellypetersontx
+  instagram_link: https://www.instagram.com/KellyPetersonforTexas
+  youtube_link: https://www.youtube.com/@KellyPetersonForTexas
+  #gtm: GTM-123456
+  paid_for: Paid for by Kelly Peterson for Texas
+  form_endpoint: https://usebasin.com/f/40576f9eba89
+  form_endpoint_volunteer: https://usebasin.com/f/eb94f071f072
+  donate_link_label: Make a Donation →
+  donate_link: https://secure.winred.com/kelly-peterson-campaign/donate
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute:
+        block: true
+        title: true
+        wrapStandAloneImageWithinParagraph: false
+      autoHeadingID: false
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: false
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: -20
+    - name: News
+      url: /news/
+      weight: -10
+    - name: Contact
+      url: /contact/
+      weight: -5

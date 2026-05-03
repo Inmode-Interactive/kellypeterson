@@ -1,0 +1,60 @@
+{{ $myVar := .Params.sections }} {{ $mgatag := index
+site.Taxonomies.section_categories }} {{ range $k, $v := $mgatag }} {{ if eq $k
+$myVar }} {{ range $i, $p := sort $v.Pages "Params.weight" }}
+<section id="{{ .Params.id }}" class="{{ if eq $i 0 }}wave-gradient{{ end }}">
+  {{ if eq .Params.partial "youtube-section" }}
+  {{ partial "youtube-section.html" . }}
+{{ end }}
+  {{ if .Params.custom_section }} {{ if eq .Params.partial "quotes" }} {{
+  partial "quotes.html" . }} {{ else }} {{ .Content }} {{ end }} {{ else }} {{
+  if .Params.image }}
+  <div class="bg-image">
+    <img
+      data-src="{{ .Params.image }}"
+      class="lazyload img-fluid"
+      alt="{{ .Site.Title }} - {{ .Title }} Image"
+    />
+  </div>
+  {{end}} {{ if .Params.vimeobg }}
+  <div class="video-wrapper bg-image">
+    <iframe
+      src="https://player.vimeo.com/video/{{.Params.vimeobg}}?background=1"
+      frameborder="0"
+      allow="autoplay; fullscreen; picture-in-picture"
+      frameborder="0"
+      webkitallowfullscreen
+      mozallowfullscreen
+      allowfullscreen
+    ></iframe>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+  </div>
+  {{end}}
+
+  <div class="container">
+    <div class="row {{ .Params.position }} ">
+      {{if .Params.section_image}}
+      <div class="col sectionImgCol aos-item" data-aos="fade">
+        <img
+          data-src="{{.Params.section_image}}"
+          class="lazyload"
+          alt="{{ .Title }} {{ .Params.Site.Title }} Section Image"
+        />
+      </div>
+      {{end}}
+      <div
+        class="col col-12 sectionColTxt {{ .Params.size }} aos-item"
+        data-aos="fade"
+      >
+        {{ .Content }}
+        {{if .Params.signature}}
+        <div class="signature">
+      <img src="{{ "img/signature.png" | relURL }}" alt="Community Image" />
+    </div>
+    {{end}}
+      </div>
+    </div>
+  </div>
+
+  {{ end }}
+</section>
+{{ end }} {{ end }} {{ end }}

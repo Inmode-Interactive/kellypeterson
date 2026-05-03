@@ -1,0 +1,40 @@
+<section id="reviews-2247">
+  <div class="cs-container">
+    <div class="cs-content text-center">
+      <span class="cs-topper">{{ .Params.title }}</span>
+      <h2 class="cs-title">{{ .Params.heading }}</h2>
+    </div>
+
+
+    <div class="cs-feature-image ">
+      <img src="{{ "img/kelly.jpg" | relURL }}" alt="Community Image" />
+    </div>
+
+    <ul class="cs-card-group row">
+      {{ $reviews := where site.RegularPages "Section" "reviews" }} {{ range
+      sort $reviews "Params.weight" }}
+      <li class="cs-item col-md-6">
+        <picture class="cs-picture"> </picture>
+
+        <div class="cs-wrapper">
+          <img
+            class="cs-quote"
+            src="/img/quote.svg"
+            alt="quote"
+            width="48"
+            height="40"
+          />
+
+          <p class="cs-item-text">{{ .Content }}</p>
+
+          <span class="cs-name">
+            {{ .Params.name }} {{ with .Params.role }}
+            <span class="cs-desc">{{ . }}</span>
+            {{ end }}
+          </span>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>

@@ -1,0 +1,109 @@
+{{ partial "head.html" . }}
+
+<body id="home">
+
+{{ partial "header.html" . }}
+
+
+<section id="banner" role="banner">
+
+    {{if .Params.banner_image}} 
+    <div class="banner-image bg-image"><img class="lazyload" data-src="{{.Params.banner_image}}" alt="{{ .Site.Params.Title }} {{ .Title }} Banner Background Image" /></div>
+    {{end}}
+
+    {{if .Params.banner_video}} 
+    <div class="banner-image bg-image video-wrapper">
+        <!-- Vimeo -->
+        {{/*  <iframe title="{{ .Params.Site.Title }} Home Banner Background Video" class="lazyload" data-src="https://player.vimeo.com/video/{{.Params.banner_video}}?background=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <script defer src="https://player.vimeo.com/api/player.js"></script>  */}}
+
+        <!-- Youtube -->
+        <iframe title="{{ .Params.Site.Title }} Home Banner Background Video" class="lazyload" data-src="https://www.youtube.com/embed/{{.Params.banner_video}}?autoplay=1&mute=1&controls=0&loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <script defer src="https://www.youtube.com/iframe_api"></script>
+    </div>
+    {{end}}
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-12 col-md-6 text-center">
+                <div class="bannerTxtBx animated fadeInScale">
+
+                    <a href='{{ "/" | relURL }}' id="logo"><img class="lazyload" data-src='{{ "img/logo.svg" | relURL }}' alt="{{ .Site.Title }} Logo"></a>
+
+                    <h1>
+                        {{if .Params.banner_title}}
+                        {{.Params.banner_title|safeHTML}}
+                        {{ else}}
+                        {{ .Title | safeHTML }}
+                        {{end}}
+                    </h1>
+
+                    {{if .Params.banner_tagline}}
+                    <p class="bannerTagline">
+                        {{.Params.banner_tagline | safeHTML}}
+                    </p>
+                    {{end}}
+
+                    {{if .Description }}
+                    <p>{{ .Description | safeHTML}}</p>
+                    {{end}}
+
+                    {{ if .Site.Params.donate_link}}
+                    <a class="button" href="{{.Site.Params.donate_link}}">{{.Site.Params.donate_link_label | safeHTML}}</a>
+                    {{end}}
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{if .Params.candidate_image}}
+    <div class="col sectionImgCol aos-item" data-aos="fade">
+        <img data-src="{{.Params.candidate_image}}" class="lazyload" alt="{{ .Title }} {{ .Params.Site.Title }} Section Image"/>
+    </div>
+    {{end}}
+
+</section>
+
+
+<main role="main" class="main-sections">
+    {{ partial "signup.html" .}}
+    {{ partial "page-sections.html" .}}
+    {{ partial "img-banner.html" . }}
+</main>
+
+<div id="inquire" class="mfp-hide">
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col text-center">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{{/*  {{ partial "latest-news.html" . }}  */}}
+
+{{ partial "footer.html" . }}
+
+{{ partial "scripts.html" . }}
+
+<!-- Enable for NetlifyCMS -->
+{{/*  <script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+</script>  */}}
+
+</body>
+</html>

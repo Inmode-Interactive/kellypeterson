@@ -1,0 +1,33 @@
+# Hugo build output + cache
+/public/
+/resources/
+.hugo_build.lock
+
+# Hugo / OS / editor
+.DS_Store
+Thumbs.db
+
+# Editor / IDE
+/.idea/
+/.vscode/
+*.swp
+*.swo
+*~
+
+# Local environment / secrets
+.env
+.env.local
+.env.*.local
+*.local
+
+# Netlify CLI
+.netlify/
+
+# Node (only relevant if SCSS / Netlify plugins ever pull node_modules locally)
+/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+*.log
