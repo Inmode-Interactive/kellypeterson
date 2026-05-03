@@ -84,9 +84,6 @@ Homebuilding Industry
 **Mrs. Julie & Mr. Alan Kent**  
 Community Leaders
 
-**Sam Malone**  
-Houston Radio Show Host, President of 512 New Media
-
 **Susan Sample**  
 Three-Term Mayor of West University
 
