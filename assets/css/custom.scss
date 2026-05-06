@@ -930,6 +930,10 @@ body {
       width: 100%;
       border-radius: 10px;
 
+      &:last-child {
+        grid-column: span 12;
+      }
+
       &:before {
         /* background color */
         content: '';

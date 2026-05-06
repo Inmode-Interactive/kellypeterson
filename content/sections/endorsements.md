@@ -17,9 +17,6 @@ section_categories:
 **Sam Harless**  
 HD 126 State Representative
 
-**State Rep. Pat Curry**
-HD 56 State Representative
-
 ### Harris County Conservative Leaders
 
 **Gina Hicks**  
@@ -54,14 +51,20 @@ Former Executive Director of the Harris Couty GOP
 **Carol Klass**  
 **Wayne Goodrick**  
 **Sharon Jennings**  
-Precinct 7 Chair
+Precinct Chair 623
 
 **Dylan Glass**  
+Founder of SKT Conservatives  
 **Andrea Scott**  
-**Sara Mack**
+Director of Talent Acquisition, Harris County  
+**Sara Mack**  
+Mother of Five, Constituent
 
 **David Kimberly**  
 Former Klein ISD police chief
+
+**Karol Klass**  
+Republican Activist
 
 ### Also Endorsed By
 
@@ -104,5 +107,10 @@ Ophthalmologist
 
 **Thomas Christensen**  
 Owner of Auto Care USA, Champion Forest
+
+**Rodger Brogdon**  
+Owner of Rooftec
+
+**Texas Conservative Fund**
 
 ![Associated Republicans of Texas, Spring / Klein / Tomball Conservatives, HosPAC, MPACT Manufacturers PAC of Texas, CLEAT PAC](/img/endorsements.png)
