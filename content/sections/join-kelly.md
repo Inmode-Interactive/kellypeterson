@@ -1,7 +1,7 @@
 ---
-title: Section 3
+title: Join Kelly
 weight: 5
-id: section-3
+id: join-kelly
 position: justify-content-start align-content-center
 size: col-12 text-center
 #image: https://picsum.photos/800

@@ -1,7 +1,7 @@
 ---
-title: Section 2
+title: Meet Kelly (Continued)
 weight: 2
-id: section-1-2
+id: meet-kelly-2
 position: justify-content-center align-content-center
 size: col-12 col-md-8
 #image: /img/kelly-at-family-graduation.jpg

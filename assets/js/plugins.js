@@ -79,26 +79,6 @@ $('.labelToggle input, .labelToggle textarea, .labelToggle select').on("focus ch
     }
 );
 
-// Client Logos
-$(document).ready(function() {
-    $('.client-logos .owl-carousel').owlCarousel({
-      margin: 0,
-      loop: true,
-      autoWidth: true,
-      items: 4,
-      autoplay:true,
-      slideTransition: 'linear',
-      autoplayTimeout: 4000,
-      autoplaySpeed: 4000,
-      autoplayHoverPause: false,
-    responsiveClass:true,
-    dots: false,
-    nav: false,
-    mouseDrag: false
-    })
-  });
-
-
 // Magnific Popup
 $('.open-popup-link').magnificPopup({
     type:'inline',

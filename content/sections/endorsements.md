@@ -1,5 +1,5 @@
 ---
-title: Section 4
+title: Endorsements
 weight: 4
 id: endorsements
 position: justify-content-center align-content-center

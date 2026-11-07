@@ -1,7 +1,7 @@
 ---
-title: Section 1
+title: Meet Kelly
 weight: 1
-id: section-1
+id: meet-kelly-1
 position: justify-content-end align-content-center
 size: col-12 col-md-7
 image: /img/kelly-at-family-graduation.jpg

@@ -85,7 +85,6 @@ The staging `robots.txt` blocks all crawlers (`Disallow: /`) so preview deploys 
 │   ├── news/            # News / blog posts
 │   ├── policies/        # Privacy + Terms
 │   ├── sections/        # Homepage sections (rendered via taxonomy)
-│   ├── logos/           # Endorsement / partner logos
 │   └── thank-you/       # Form-submission thank-you page
 ├── layouts/             # Hugo templates
 │   ├── _default/        # Default single + list templates

@@ -6,6 +6,7 @@
 # Hugo / OS / editor
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Editor / IDE
 /.idea/

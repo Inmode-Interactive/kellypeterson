@@ -4,7 +4,7 @@ heading: Trusted by Our Community
 id: reviews
 section_categories:
   - Home
-weight: 5
+weight: 6
 custom_section: true
 partial: quotes
 ---

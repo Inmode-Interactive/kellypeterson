@@ -1,7 +1,7 @@
 ---
-title: Section 2
+title: Key Issues
 weight: 3
-id: section-2
+id: issues
 position: justify-content-start align-content-center
 size: col-12 text-center
 #image: https://picsum.photos/800

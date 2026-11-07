@@ -296,40 +296,6 @@ form {
   }
 }
 
-#clients {
-  padding: 24px 0;
-  background: #fff;
-
-  .container-fluid {
-    padding: 0;
-  }
-
-  .client-logos {
-    padding-top: 0.5rem;
-
-    .item {
-      /* Change the Logo Height to Adjust Size */
-      height: 150px;
-      align-items: center;
-      padding: 8px 3.5rem 0;
-      .logoBx {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        img {
-          position: relative;
-          object-fit: cover;
-          object-position: center center;
-          width: 100%;
-          height: 100%;
-          filter: grayscale(1);
-        }
-      }
-    }
-  }
-}
 
 #signup {
   padding: 2rem 0;
