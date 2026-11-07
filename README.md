@@ -93,7 +93,6 @@ The staging `robots.txt` blocks all crawlers (`Disallow: /`) so preview deploys 
 │   ├── shortcodes/
 │   └── index.html       # Homepage template
 ├── static/              # Files copied verbatim to site root
-│   ├── admin/           # NetlifyCMS scaffolding (currently disabled)
 │   ├── img/             # Site imagery
 │   ├── js/              # Vendor JS (defer.js, lazysizes)
 │   ├── favicon/
@@ -214,7 +213,6 @@ The donate button is a link to `donate_link` in `config.yaml`. There is no on-si
 
 A few things are scaffolded but turned off. Re-enable as needed:
 
-- **NetlifyCMS** — `static/admin/` contains `config.yml` and `index.html`. Enable by linking the repo in Netlify Identity + Git Gateway, then ensure `/admin/` is reachable. Currently the integration is unconfigured; treat it as a starting point, not a working CMS.
 - **Google Tag Manager** — uncomment the `gtm:` line in `config.yaml` and supply your container ID.
 - **Instagram link** — uncomment `instagram_link` in `config.yaml` once an account exists.
 - **Banner video** — uncomment `banner_video` in `content/_index.md` and provide a YouTube ID to swap the hero image for a video.
